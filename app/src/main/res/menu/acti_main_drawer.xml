@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/top_news"
+            android:icon="@drawable/ic_change"
+            android:title="Top News" />
+        <item
+            android:id="@+id/lang_news"
+            android:icon="@drawable/ic_change"
+            android:title="Language Wise News" />
+        <item
+            android:id="@+id/area_news"
+            android:icon="@drawable/ic_change"
+            android:title="Area Wise News" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools"
+            android:visible="false" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share this News" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send"
+                android:visible="false" />
+        </menu>
+    </item>
+
+
+</menu>

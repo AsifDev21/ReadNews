@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aslabs.manyinone.ActiMainActivity"
+    tools:showIn="@layout/app_bar_acti_main">
+
+    <im.delight.android.webview.AdvancedWebView
+        android:id="@+id/webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_tab_layout"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!--Top News-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_top_News"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tabMode="scrollable">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_timesofindia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="timesofindia" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_ndtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ndtv" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_indiatoday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="indiatoday" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_indianexpress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="indianexpress" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_thehindu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="thehindu" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_news18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="news18" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_bhaskar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bhaskar" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_firstpost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="firstpost" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_business-standard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="business-standard" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_dnaindia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dnaindia" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_deccanchronicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="deccanchronicle" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_oneindia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="oneindia" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_financialexpress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="financialexpress" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scroll" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_thehindubusinessline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="thehindubusinessline" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_thequint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="thequint" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_outlookindia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="outlookindia" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_freepressjournal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="freepressjournal" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_newsx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="newsx" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_asianage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asianage" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_navhindtimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="navhindtimes" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_nagpurToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nagpurtoday" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_india"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="india" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_jagran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jagran" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/item_manoramaonline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="manoramaonline" />
+        </android.support.design.widget.TabLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_area_news"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            app:tabMode="scrollable">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/andaman" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/andhrapradesh" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arunachal_pradesh" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/assam" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bihar" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bihar2" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chattisgarh" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goa" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delhi" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gujrat" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/haryana" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/himachal_pradesh" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jammu" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kashmir" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jharkhand" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/karnataka" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kerala" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lakshwadeep" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/madhya_pradesh" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maharashtra" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maharashtra2" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maharashtra3" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manipur" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meghalaya" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mizoram" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nagaland" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/odisha" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/punjab" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rajashthan" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sikkim" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tamil_nadu" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telangana" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tripura" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uttar_pradesh" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uttarakhand" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/west_bengal" />
+
+
+        </android.support.design.widget.TabLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_lang_News"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tabMode="scrollable">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hindi" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hindi2" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hindi3" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hindi4" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bengali" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bengali2" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bengali3" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telgu" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telgu2" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/marathi" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/marathi2" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/marathi3" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tamil" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tamil2" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/urdu" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kannada" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gujrati" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/malyalam" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sanskrit" />
+
+
+        </android.support.design.widget.TabLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

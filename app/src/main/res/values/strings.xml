@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">Read News</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--India News-->
+
+    <string name="news_times_of_india">http://timesofindia.indiatimes.com/</string>
+    <string name="news_ndtv">http://www.ndtv.com/</string>
+    <string name="news_india_today">http://indiatoday.intoday.in//</string>
+    <string name="news_the_indian_express">http://indianexpress.com/</string>
+    <string name="news_the_hindu">http://www.thehindu.com/</string>
+    <string name="news_news_18">http://www.news18.com/</string>
+    <string name="news_bhaskar">https://www.bhaskar.com/</string>
+    <string name="news_first_post">http://www.firstpost.com/</string>
+    <string name="news_business_standard">http://www.business-standard.com/</string>
+    <string name="news_dna">http://www.dnaindia.com/</string>
+    <string name="news_deccan_chronicle">http://www.deccanchronicle.com/</string>
+    <string name="news_one_india">http://www.oneindia.com/</string>
+    <string name="news_the_financial_express">http://www.financialexpress.com/</string>
+    <string name="news_scroll_in">https://scroll.in/</string>
+    <string name="news_business_line">http://www.thehindubusinessline.com/</string>
+    <string name="news_the_quint">https://www.thequint.com/</string>
+    <string name="news_outlook_india">http://www.outlookindia.com/</string>
+    <string name="news_press_journal">http://www.freepressjournal.in/</string>
+    <string name="news_news_x">http://www.newsx.com/</string>
+    <string name="news_the_asian_age">http://www.asianage.com/</string>
+    <string name="news_navhind_times">http://www.navhindtimes.in/</string>
+    <string name="news_nagpur_today">http://www.nagpurtoday.in/</string>
+    <string name="news_india">http://www.india.com/</string>
+    <string name="news_jagran">http://www.jagran.com/</string>
+    <string name="news_manorma">http://www.manoramaonline.com/</string>
+
+
+    <!--Area Wise News-->
+    <string name="news_state_andaman">http://www.andamansheekha.com/</string>
+    <string name="news_state_andhra_pradesh">http://www.hindiherald.com/</string>
+    <string name="news_state_arunachal_pradesh">http://www.arunachaltimes.in/</string>
+    <string name="news_state_assam">http://www.assamtribune.com/</string>
+    <string name="news_state_bihar">http://www.bihartimes.in/</string>
+    <string name="news_state_bihar2">http://www.patnadaily.com/</string>
+    <string name="news_state_chattisgarh">https://www.bhaskar.com/chhatisgarh/</string>
+    <string name="news_state_goa">http://www.goanews.com/</string>
+    <string name="news_state_delhi">http://www.dnaindia.com/delhi</string>
+    <string name="news_state_gujrat">http://timesofindia.indiatimes.com/topic/Gujarat/news</string>
+    <string name="news_state_haryana">http://mhone.in/category/haryana/</string>
+    <string name="news_state_himachal_pradesh">http://himtimes.com/</string>
+    <string name="news_state_jammu">http://www.jammulinksnews.com/</string>
+    <string name="news_state_kashmir">https://kashmirobserver.net/</string>
+    <string name="news_state_kashmir2">http://www.risingkashmir.com/</string>
+    <string name="news_state_jharkhand">http://m.jhnews.co.in/?pref=1</string>
+    <string name="news_state_karnataka">http://www.newskarnataka.com/</string>
+    <string name="news_state_kerala">http://english.mathrubhumi.com/</string>
+    <string name="news_state_laskhwadeep">http://timesofindia.indiatimes.com/topic/Lakshadweep</string>
+    <string name="news_state_madhya_pradesh">https://www.bhaskar.com/mp/</string>
+    <string name="news_state_maharashtra">http://maharashtratimes.indiatimes.com/</string>
+    <string name="news_state_maharashtra2">http://jaimaharashtranews.tv/</string>
+    <string name="news_state_maharashtra3">http://abpmajha.abplive.in/maharashtra</string>
+    <string name="news_state_manipur">http://www.ifp.co.in/</string>
+    <string name="news_state_meghalaya">http://www.theshillongtimes.com/meghalaya/</string>
+    <string name="news_state_mizoram">http://news.aizawlonline.in/</string>
+    <string name="news_state_nagaland">http://www.nagalandpost.com/</string>
+    <string name="news_state_odisha">http://odishatv.in/    </string>
+    <string name="news_state_punjab">http://www.yespunjab.com/</string>
+    <string name="news_state_rajasthan">http://rajasthanpatrika.patrika.com/</string>
+    <string name="news_state_sikkim">http://www.sikkimexpress.com/</string>
+    <string name="news_state_tamil_nadu">http://www.thehindu.com/news/national/tamil-nadu/</string>
+    <string name="news_state_telangana">http://www.thehindu.com/news/national/telangana/</string>
+    <string name="news_state_tripura">http://tripurachronicle.in/</string>
+    <string name="news_state_uttar_pradesh">http://zeenews.india.com/uttar-pradesh</string>
+    <string name="news_state_uttarakhand">https://www.dainikuttarakhand.com/</string>
+    <string name="news_state_west_bengal">http://zeenews.india.com/west-bengal</string>
+
+
+    <!--Language Wise News-->
+
+    <string name="news_lang_hindi_aajtak">http://aajtak.intoday.in/</string>
+    <string name="news_lang_hindi_webduniya">http://www.webdunia.com/</string>
+    <string name="news_lang_hindi_live_hindustan">http://www.livehindustan.com/</string>
+    <string name="news_lang_hindi_raftar">http://www.raftaar.in/</string>
+    <string name="news_lang_bengali_zeenews">http://zeenews.india.com/bengali/</string>
+    <string name="news_lang_bengali_abp">http://abpananda.abplive.in/</string>
+    <string name="news_lang_bengali_anandabazar">http://www.anandabazar.com/</string>
+    <string name="news_lang_telgu_eenadu">http://www.eenadu.net/</string>
+    <string name="news_lang_telgu_tupaki">http://www.tupaki.com/</string>
+    <string name="news_lang_marathi_loksatta">http://www.loksatta.com/</string>
+    <string name="news_lang_marathi_lokmat">http://www.lokmat.com/</string>
+    <string name="news_lang_marathi_ibn_lokmat">http://www.ibnlokmat.tv/</string>
+    <string name="news_lang_tamil_dinamalar">http://www.dinamalar.com/</string>
+    <string name="news_lang_tamil_dailythanthi">http://www.dailythanthi.com/</string>
+    <string name="news_lang_urdu_times">http://www.urdutimes.com/</string>
+    <string name="news_lang_kannada">http://www.kannadaprabha.com/</string>
+    <string name="news_lang_gujrati">http://sandesh.com/</string>
+    <string name="news_lang_malyalam">http://www.manoramaonline.com/news.html</string>
+    <string name="news_lang_sanskrit">http://www.samprativartah.in/</string>
+
+    <!--Area Name-->
+    <string name="andaman">andaman</string>
+    <string name="andhrapradesh">andhrapradesh</string>
+    <string name="arunachal_pradesh">arunachal pradesh</string>
+    <string name="west_bengal">west bengal</string>
+    <string name="uttarakhand">uttarakhand</string>
+    <string name="uttar_pradesh">uttar pradesh</string>
+    <string name="tripura">tripura</string>
+    <string name="telangana">telangana</string>
+    <string name="tamil_nadu">tamil nadu</string>
+    <string name="sikkim">sikkim</string>
+    <string name="rajashthan">rajashthan</string>
+    <string name="punjab">punjab</string>
+    <string name="odisha">odisha</string>
+    <string name="nagaland">nagaland</string>
+    <string name="mizoram">mizoram</string>
+    <string name="meghalaya">meghalaya</string>
+    <string name="manipur">manipur</string>
+    <string name="maharashtra3">maharashtra3</string>
+    <string name="maharashtra2">maharashtra2</string>
+    <string name="maharashtra">maharashtra</string>
+    <string name="madhya_pradesh">madhya pradesh</string>
+    <string name="lakshwadeep">lakshwadeep</string>
+    <string name="kerala">kerala</string>
+    <string name="karnataka">karnataka</string>
+    <string name="jharkhand">jharkhand</string>
+    <string name="kashmir">kashmir</string>
+    <string name="kashmir2">kashmir2</string>
+    <string name="jammu">jammu</string>
+    <string name="himachal_pradesh">himachal pradesh</string>
+    <string name="haryana">haryana</string>
+    <string name="gujrat">gujrat</string>
+    <string name="delhi">delhi</string>
+    <string name="goa">goa</string>
+    <string name="chattisgarh">chattisgarh</string>
+    <string name="bihar2">bihar2</string>
+    <string name="bihar">bihar</string>
+    <string name="assam">assam</string>
+
+    <!--Language-->
+    <string name="sanskrit">sanskrit</string>
+    <string name="malyalam">malyalam</string>
+    <string name="gujrati">gujrati</string>
+    <string name="kannada">kannada</string>
+    <string name="urdu">urdu</string>
+    <string name="tamil2">tamil2</string>
+    <string name="tamil">tamil</string>
+    <string name="marathi3">marathi3</string>
+    <string name="marathi2">marathi2</string>
+    <string name="marathi">marathi</string>
+    <string name="telgu2">telgu2</string>
+    <string name="telgu">telgu</string>
+    <string name="bengali3">bengali3</string>
+    <string name="bengali2">bengali2</string>
+    <string name="bengali">bengali</string>
+    <string name="hindi4">hindi4</string>
+    <string name="hindi3">hindi3</string>
+    <string name="hindi2">hindi2</string>
+    <string name="hindi">hindi</string>
+
+</resources>

@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "aslabs.manyinone"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    dexOptions {
+        // incremental true
+        maxProcessCount 4
+        javaMaxHeapSize "5g"
+    }
+
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+
+    // Specifies a flavor dimension.
+    flavorDimensions "ReadSeries"
+
+    productFlavors {
+        readnews {
+            applicationId "aslabs.manyinone.readnews"
+            versionCode 1
+            versionName "1.0"
+        }
+        readgk {
+            applicationId "aslabs.manyinone.readgk"
+            versionCode 1
+            versionName "1.0"
+        }
+        readandroid {
+            applicationId "aslabs.manyinone.readandroid"
+            versionCode 1
+            versionName "1.0"
+        }
+        readajava {
+            applicationId "aslabs.manyinone.readajava"
+            versionCode 1
+            versionName "1.0"
+        }
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:26.0.0-beta2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:26.0.0-beta2'
+
+    compile 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+}
