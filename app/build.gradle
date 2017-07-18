@@ -30,8 +30,8 @@ android {
     productFlavors {
         readnews {
             applicationId "aslabs.manyinone.readnews"
-            versionCode 1
-            versionName "1.0"
+            versionCode 2
+            versionName "1.1"
         }
         readgk {
             applicationId "aslabs.manyinone.readgk"

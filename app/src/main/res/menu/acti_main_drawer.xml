@@ -30,10 +30,15 @@
                 android:icon="@drawable/ic_menu_share"
                 android:title="Share this News" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_share_app"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send"
-                android:visible="false" />
+                android:title="Share this App"
+                android:visible="true" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Feedback/Support"
+                android:visible="true" />
         </menu>
     </item>
 

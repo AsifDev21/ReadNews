@@ -3,6 +3,7 @@ package aslabs.manyinone;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -58,25 +59,40 @@ public class ActiMainActivity extends AppCompatActivity
 
         if (Utils.getPreferenceInt(mContext, Utils.FIRST_OPEN) != 1) {
 
-            new AlertDialog.Builder(this)
-                    .setTitle("First time user note")
-                    .setIcon(getResources().getDrawable(R.drawable.ic_change))
-                    .setMessage("1. Swipe from left to right for navigation panel.\n\n2. Ads which are shown are from websites and not from this application." +
-                            "\n\n3. The loading time is based on your internet speed.\n\n4. No history is stored")
-                    .setPositiveButton("Got it", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            Utils.setPreferenceInt(mContext, Utils.FIRST_OPEN, 1);
-                            dialog.dismiss();
+            try {
+                new AlertDialog.Builder(this)
+                        .setTitle("First time user note")
+                        .setIcon(getResources().getDrawable(R.drawable.ic_change))
+                        .setMessage("1. Swipe from left to right for navigation panel.\n\n2. Ads which are shown are from websites and not from this application." +
+                                "\n\n3. The loading time is based on your internet speed.\n\n4. No history is stored.\n\n5. Please wait for loadings after clicking.")
+                        .setPositiveButton("Got it", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Utils.setPreferenceInt(mContext, Utils.FIRST_OPEN, 1);
+                                try {
+                                    dialog.dismiss();
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                                try {
+                                    mDrawerLayout.openDrawer(Gravity.START);
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }).setNegativeButton("Show me Again later", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        try {
                             mDrawerLayout.openDrawer(Gravity.START);
+                        } catch (Exception e) {
+                            e.printStackTrace();
                         }
-                    }).setNegativeButton("Show me Again later", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    mDrawerLayout.openDrawer(Gravity.START);
-                }
-            }).show();
-
+                    }
+                }).show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
         }
 
@@ -117,6 +133,7 @@ public class ActiMainActivity extends AppCompatActivity
     }
 
     public void registerEvent() {
+
 
         mToggle = new ActionBarDrawerToggle(
                 this, mDrawerLayout, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -435,6 +452,28 @@ public class ActiMainActivity extends AppCompatActivity
 
     }
 
+    private void sendEmail() {
+
+        Intent i = new Intent(Intent.ACTION_SEND);
+        i.setType("message/rfc822");
+        i.putExtra(Intent.EXTRA_EMAIL, new String[]{"support@techbie.in"});
+        i.putExtra(Intent.EXTRA_SUBJECT, "Support/Feedback");
+        i.putExtra(Intent.EXTRA_TEXT, "\n\n\n\n-------------------------\n\n\n\nWrite Email above this \nVersion : "
+                + BuildConfig.VERSION_CODE + "\nFlavour :" + BuildConfig.FLAVOR
+                + "\nSerial :" + Build.SERIAL
+                + "\nManufacture: " + Build.MANUFACTURER
+                + "\nBrand: " + Build.BRAND
+                + "\nMODEL: " + Build.MODEL
+                + "\nVersion Code: " + Build.VERSION.RELEASE
+                + "\nSDK  " + Build.VERSION.SDK);
+        try {
+            startActivity(Intent.createChooser(i, "Send Email client ..."));
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
     public void generateId() {
 
         mTabLayoutTopNews = findViewById(R.id.tabLayout_top_News);
@@ -444,6 +483,7 @@ public class ActiMainActivity extends AppCompatActivity
         mDrawerLayout = findViewById(R.id.drawer_layout);
         mToolbar = findViewById(R.id.toolbar);
         mNavigationView = findViewById(R.id.nav_view);
+
 
     }
 
@@ -530,10 +570,18 @@ public class ActiMainActivity extends AppCompatActivity
                 shareLink(mAdvancedWebView.getOriginalUrl());
                 Toast.makeText(mContext, "Sharing Link", Toast.LENGTH_SHORT).show();
             }
+        } else if ((id == R.id.nav_share_app)) {
+            shareLink("I am proud to share Indian News");
+            Toast.makeText(mContext, "Sharing App Link", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_support) {
+            sendEmail();
         }
-
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+        try {
+            DrawerLayout drawer = findViewById(R.id.drawer_layout);
+            drawer.closeDrawer(GravityCompat.START);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return true;
     }
 
